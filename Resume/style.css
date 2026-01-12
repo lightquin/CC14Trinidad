@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+background: #f2f4f8;
+padding: 40px 15px;
+}
+
+.resume {
+max-width: 900px;
+background: #ffffff;
+margin: auto;
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+overflow: hidden;
+}
+
+.header {
+background: linear-gradient(135deg, #111827, #1f2933);
+color: white;
+text-align: center;
+padding: 40px 20px;
+}
+
+.header h1 {
+font-size: 2.4rem;
+font-weight: 600;
+}
+
+.header .title {
+margin-top: 8px;
+opacity: 0.85;
+}
+
+.header .contact {
+margin-top: 12px;
+font-size: 0.9rem;
+opacity: 0.75;
+}
+
+.content {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 30px;
+padding: 40px;
+}
+
+section {
+margin-bottom: 28px;
+}
+
+section h2 {
+color: #111827;
+border-left: 4px solid #6366f1;
+padding-left: 10px;
+margin-bottom: 12px;
+font-size: 1.1rem;
+}
+
+.item {
+margin-bottom: 16px;
+}
+
+.item h3 {
+font-size: 1rem;
+color: #1f2933;
+}
+
+.item span {
+font-size: 0.85rem;
+color: #6b7280;
+}
+
+.item p, li {
+font-size: 0.9rem;
+color: #374151;
+line-height: 1.6;
+margin-top: 6px;
+}
+
+ul {
+padding-left: 18px;
+}
+
+.skills {
+list-style: none;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 8px;
+}
+
+.skills li {
+background: #eef2ff;
+color: #3730a3;
+padding: 6px 10px;
+border-radius: 8px;
+text-align: center;
+font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+.content {
+grid-template-columns: 1fr;
+}
+}
